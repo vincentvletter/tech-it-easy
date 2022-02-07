@@ -285,16 +285,18 @@ function priceTv(tv) {
 
 // 4.c
 function sizeTv(tv) {
-    let sizes = "";
-    for (let i = 0; i < tv.availableSizes.length; i++) {
-        if (i < tv.availableSizes.length - 1) {
-            sizes = sizes + `${tv.availableSizes[i]} inch (${Math.floor(tv.availableSizes[i] * 2.54)} cm) | `;
-        } else {
-            sizes = sizes + `${tv.availableSizes[i]} inch (${Math.floor(tv.availableSizes[i] * 2.54)} cm)`;
-        }
-    }
-    return sizes;
+    // let sizes = "";
+    // for (let i = 0; i < tv.availableSizes.length; i++) {
+    //     if (i < tv.availableSizes.length - 1) {
+    //         sizes = sizes + `${tv.availableSizes[i]} inch (${Math.floor(tv.availableSizes[i] * 2.54)} cm) | `;
+    //     } else {
+    //         sizes = sizes + `${tv.availableSizes[i]} inch (${Math.floor(tv.availableSizes[i] * 2.54)} cm)`;
+    //     }
+    // }
+    // return sizes;
+    return tv.availableSizes.map(size => `${size} inch (${Math.floor(size * 2.54)} cm)`).join(" | ");
 }
+
 
 // 4.d
 function formatTv(tv) {
