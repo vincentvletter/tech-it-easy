@@ -1,0 +1,20 @@
+div {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+#sold-tv\'s > h4 {
+    color: green;
+}
+
+#sum-of-tv\'s-bought > h4 {
+    color: blue;
+}
+
+#tv\'s-left-to-sale > h4 {
+    color: red;
+}
+
+#tv {
+    white-space: pre-line;
+}
